@@ -93,14 +93,14 @@ origen = st.text_input(
 )
 
 destinos_text = st.text_area(
-    "Escribe aquí los centros educativos/municipios a ordenar(uno por línea, ver ejemplos):",
+    "Escribe aquí los centros educativos/municipios a ordenar (uno por línea, ver ejemplos)",
     value="\n".join(nombres_centros),
     height=300
 )
 
 if st.button("Calcular"):
     destinos_lista = [d.strip() for d in destinos_text.splitlines() if d.strip()]
-    with st.spinner("Calculando distancias..."):
+    with st.spinner("Calculando distancias, pero yo no te relleno el tanque..."):
         resultados = obtener_tiempos_y_distancias(origen, destinos_lista, API_KEY)
         ordenados = ordenar_institutos(resultados)
         
