@@ -99,7 +99,7 @@ def ordenar_institutos(resultados):
 # ==============================
 # INTERFAZ STREAMLIT
 # ==============================
-st.title("Traslados docentes – Ordenado de destinos - JorgeOlleros")
+st.title("Traslados docentes – Selección de destinos - byJOlleros")
 st.markdown("""
 Esta app ordena automáticamente tus destinos según:
 1. **Tiempo real en coche**  
