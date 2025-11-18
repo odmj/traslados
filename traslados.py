@@ -17,11 +17,7 @@ if not API_KEY:
 # ==============================
 nombres_centros = [
     "La Almunia de Doña Godina", "CPI San Jorge", "CPI Julio Verne",
-    "IES Félix de Azara", "IES Grande Covián", "IES José Manuel Blecua",
-    "IES Miralbueno", "CPI Rosales del Canal", "CPI Parque Venecia",
     "Montalbán", "Mora de Rubielos", "Rubielos de Mora", "San Blás",
-    "Teruel", "Utrillas", "Valderrobres", "Ateca", "Belchite", "Borja",
-    "Bujaraloz"
 ]
 
 # ==============================
@@ -93,12 +89,12 @@ Esta app ordena automáticamente tus destinos según:
 """)
 
 origen = st.text_input(
-    "Tu domicilio o punto de origen",
+    "Escribe aquí la dirección de tu domicilio o punto de origen:",
     value="C. de Matilde Sangüesa Castañosa, 53, Zaragoza, España"
 )
 
 destinos_text = st.text_area(
-    "Destinos (uno por línea, SE AÑADEN EJEMPLOS)",
+    "Añade aquí los destinos que te interesen:(uno por línea, igual que en los ejemplos)",
     value="\n".join(nombres_centros),
     height=300
 )
