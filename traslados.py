@@ -19,20 +19,6 @@ nombres_centros = [
     "La Almunia de Doña Godina", "CPI San Jorge", "CPI Julio Verne",
     "IES Félix de Azara", "IES Grande Covián", "IES José Manuel Blecua",
     "IES Miralbueno", "CPI Rosales del Canal", "CPI Parque Venecia",
-    "CPI Zaragoza Sur", "IES Valdespartera","CPI Valdespartera III",
-    "CPI Zaragoza Sur","CPI Soledad Puértolas","CPI Valdespartera III",
-    "San Mateo de Gállego", "María de Huerva", "Cuarte de Huerva",
-    "San Mateo de Gállego", "Utebo", "Casetas","Zuera", "Cadrete",
-    "María de Huerva", "Fuentes de Ebro", "El Burgo de Ebro", "Borja",
-    "Bujaraloz", "Alagón", "Calatayud", "Cariñena", "Caspe", "Daroca",
-    "Ejea", "Épila", "Gallur", "Illueca", "Maella", "Mallén", "Mequinenza",
-    "La Muela", "Pedrola", "Ricla", "Sádaba", "Sástago", "Tarazona",
-    "Tauste", "Almudévar", "Huesca", "Sariñena", "Grañén", "Aínsa",
-    "Alcolea de Cinca", "Ayerbe", "Barbastro", "Benabarre", "Benasque",
-    "Biescas", "Binéfar", "Boltaña", "Castejón de Sos", "Fraga", "Graus",
-    "Jaca", "Monzón", "Sabiñánigo", "Tamarite de Litera", "Zaidín",
-    "Albarracín", "Alcorisa", "Andorra", "Alcañiz", "Calamocha",
-    "Calanda", "Cantavieja", "Cella", "Híjar", "Monreal del Campo",
     "Montalbán", "Mora de Rubielos", "Rubielos de Mora", "San Blás",
     "Teruel", "Utrillas", "Valderrobres", "Ateca", "Belchite", "Borja",
     "Bujaraloz"
@@ -99,7 +85,7 @@ def ordenar_institutos(resultados):
 # ==============================
 # INTERFAZ STREAMLIT
 # ==============================
-st.title("Traslados docentes – Selección de destinos - byJOlleros")
+st.title("Concurso de traslados – Petición de vacantes - jorgeolleros.")
 st.markdown("""
 Esta app ordena automáticamente tus destinos según:
 1. **Tiempo real en coche**  
@@ -107,12 +93,12 @@ Esta app ordena automáticamente tus destinos según:
 """)
 
 origen = st.text_input(
-    "Tu domicilio",
-    value="C. de Matilde Sangüesa Castañosa, 53, 50015 Zaragoza, España"
+    "Tu domicilio o punto de origen",
+    value="C. de Matilde Sangüesa Castañosa, 53, Zaragoza, España"
 )
 
 destinos_text = st.text_area(
-    "Destinos (uno por línea)",
+    "Destinos (uno por línea, SE AÑADEN EJEMPLOS)",
     value="\n".join(nombres_centros),
     height=300
 )
