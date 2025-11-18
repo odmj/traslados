@@ -16,8 +16,7 @@ if not API_KEY:
 # LISTA DE DESTINOS
 # ==============================
 nombres_centros = [
-    "La Almunia de Doña Godina", "CPI San Jorge", "CPI Julio Verne",
-    "Montalbán", "Mora de Rubielos", "Rubielos de Mora", "San Blás",
+    "Calatayud", "CPI San Jorge", "Rubielos de Mora"
 ]
 
 # ==============================
@@ -94,7 +93,7 @@ origen = st.text_input(
 )
 
 destinos_text = st.text_area(
-    "Añade aquí los destinos que te interesen:(uno por línea, igual que en los ejemplos)",
+    "Escribe aquí los centros educativos/municipios a ordenar(uno por línea, ver ejemplos):",
     value="\n".join(nombres_centros),
     height=300
 )
@@ -118,6 +117,6 @@ if st.button("Calcular"):
         st.download_button(
             "Descargar CSV",
             csv,
-            "destinos_ordenados.csv",
+            "destinos_ordenados_jorgeodm.csv",
             "text/csv"
         )
