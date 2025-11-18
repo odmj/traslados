@@ -100,7 +100,7 @@ destinos_text = st.text_area(
 
 if st.button("Calcular"):
     destinos_lista = [d.strip() for d in destinos_text.splitlines() if d.strip()]
-    with st.spinner("Calculando distancias, pero yo no te relleno el tanque..."):
+    with st.spinner("Calculando distancias..."):
         resultados = obtener_tiempos_y_distancias(origen, destinos_lista, API_KEY)
         ordenados = ordenar_institutos(resultados)
         
@@ -110,7 +110,7 @@ if st.button("Calcular"):
 
         df_vista.insert(0, "#", range(1, len(df_vista) + 1))
 
-        st.subheader("Resultados")
+        st.subheader("Resultados. Suerte, yo no voy a rellenar el tanque...")
         st.dataframe(df_vista, use_container_width=True)
 
         csv = df_vista.to_csv(index=False).encode("utf-8")
