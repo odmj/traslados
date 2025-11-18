@@ -84,8 +84,8 @@ st.title("Concurso de traslados – Petición de vacantes")
 st.markdown("""
 Esta app ordena automáticamente tus destinos según:
 1. **Tiempo real en coche**  
-2. **En caso de empate, distancia (km)**
-**Developed by jorgeollerosdm https://github.com/odmj**
+2. **En caso de empate, distancia (km)**  
+3. **Developed by jolleros https://github.com/odmj**
 """)
 
 origen = st.text_input(
