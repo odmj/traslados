@@ -110,7 +110,7 @@ if st.button("Calcular"):
 
         df_vista.insert(0, "#", range(1, len(df_vista) + 1))
 
-        st.subheader("Resultados. Suerte, yo no voy a rellenar el tanque...")
+        st.subheader("Aquí tienes los resultados. Suerte, yo no te voy a llenar el tanque...")
         st.dataframe(df_vista, use_container_width=True)
 
         csv = df_vista.to_csv(index=False).encode("utf-8")
