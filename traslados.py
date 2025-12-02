@@ -5,6 +5,38 @@ import streamlit as st
 from core import obtener_tiempos_y_distancias, ordenar_institutos
 
 # ==============================
+# CONTADOR DE VISITAS (FICHERO LOCAL)
+# ==============================
+COUNTER_FILE = "visitas.txt"
+
+
+def leer_contador():
+    """Lee el número de visitas desde el fichero. Si no existe, devuelve 0."""
+    try:
+        if not os.path.exists(COUNTER_FILE):
+            return 0
+        with open(COUNTER_FILE, "r", encoding="utf-8") as f:
+            contenido = f.read().strip()
+            if not contenido:
+                return 0
+            return int(contenido)
+    except Exception as e:
+        print("Error leyendo contador:", e)
+        return 0
+
+
+def incrementar_contador():
+    """Incrementa el contador en 1 y lo guarda en el fichero. Devuelve el nuevo valor."""
+    valor = leer_contador()
+    valor += 1
+    try:
+        with open(COUNTER_FILE, "w", encoding="utf-8") as f:
+            f.write(str(valor))
+    except Exception as e:
+        print("Error escribiendo contador:", e)
+    return valor
+
+# ==============================
 # API KEY DESDE VARIABLE ENTORNO
 # ==============================
 API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
@@ -39,6 +71,15 @@ MAPA_MODOS = {
     "Bicicleta": "bicycling",
 }
 
+# ==============================
+# CONTABILIZAR VISITA (SOLO UNA VEZ POR SESIÓN)
+# ==============================
+if "visita_contabilizada" not in st.session_state:
+    total_visitas = incrementar_contador()
+    st.session_state["visita_contabilizada"] = True
+else:
+    total_visitas = leer_contador()
+# Ojo: NO mostramos total_visitas en la interfaz. Solo se usa visitas.txt.
 
 # ==============================
 # INTERFAZ STREAMLIT
