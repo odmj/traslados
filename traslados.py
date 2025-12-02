@@ -12,7 +12,7 @@ import streamlit.components.v1 as components
 # ==============================
 ga_code = """
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WNHPEPPRR"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JL1GD1WH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
