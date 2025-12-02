@@ -4,6 +4,27 @@ import streamlit as st
 
 from core import obtener_tiempos_y_distancias, ordenar_institutos
 
+
+import streamlit.components.v1 as components
+
+# ==============================
+# CONTADOR DE VISITAS (GOOGLE ANALYTICS)
+# ==============================
+GA_MEASUREMENT_ID = "G-E6JL1GD1WH"
+
+ga_code = f"""
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
+"""
+
+components.html(ga_code, height=0, width=0)
+
 # ==============================
 # CONTADOR DE VISITAS (FICHERO LOCAL)
 # ==============================
