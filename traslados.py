@@ -10,9 +10,9 @@ import streamlit.components.v1 as components
 # ==============================
 # CONTADOR DE VISITAS (STATCOUNTER)
 # ==============================
-ga_code = """
+STATCOUNTER_code = """
 <!-- Default Statcounter code for Concurso Traslados
-https://concursotraslados.streamlit.app/ -->
+https://concursotraslados.streamlit.app -->
 <script type="text/javascript">
 var sc_project=13187725; 
 var sc_invisible=1; 
@@ -28,7 +28,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 """
 
-components.html(ga_code, height=0, width=0)
+components.html(STATCOUNTER_code, height=0, width=0)
 
 # ==============================
 # CONTADOR DE VISITAS (FICHERO LOCAL)
