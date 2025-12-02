@@ -8,17 +8,24 @@ from core import obtener_tiempos_y_distancias, ordenar_institutos
 import streamlit.components.v1 as components
 
 # ==============================
-# CONTADOR DE VISITAS (GOOGLE ANALYTICS)
+# CONTADOR DE VISITAS (STATCOUNTER)
 # ==============================
 ga_code = """
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JL1GD1WH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-E6JL1GD1WH');
+<!-- Default Statcounter code for Concurso Traslados
+https://concursotraslados.streamlit.app/ -->
+<script type="text/javascript">
+var sc_project=13187725; 
+var sc_invisible=1; 
+var sc_security="f04b0a7d"; 
 </script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter" src="https://c.statcounter.com/13187725/0/f04b0a7d/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
 """
 
 components.html(ga_code, height=0, width=0)
