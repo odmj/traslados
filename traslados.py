@@ -10,20 +10,15 @@ import streamlit.components.v1 as components
 # ==============================
 # CONTADOR DE VISITAS (GOOGLE ANALYTICS)
 # ==============================
-GA_MEASUREMENT_ID = "G-E6JL1GD1WH"
-
-ga_code = f"""
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WNHPEPPRR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{GA_MEASUREMENT_ID}');
-</script>
-"""
 
-components.html(ga_code, height=0, width=0)
+  gtag('config', 'G-5WNHPEPPRR');
+</script>
 
 # ==============================
 # CONTADOR DE VISITAS (FICHERO LOCAL)
