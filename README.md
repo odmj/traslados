@@ -23,11 +23,11 @@ https://concursotraslados.streamlit.app/
 
 ### Pantalla principal
 
-![Landing](images/landing.jpg)
+![landing](images/landing.jpg)
 
 ### Resultados obtenidos
 
-![Resultados](images/resultados.jpg)
+![resultados](images/resultados.jpg)
 
 ## Estructura del proyecto
 
