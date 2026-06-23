@@ -23,7 +23,7 @@ https://concursotraslados.streamlit.app/
 
 ### Pantalla principal
 
-![landing](images/glimpse.mp4)
+![glimpse](images/glimpse.mp4)
 
 ### Resultados obtenidos
 
