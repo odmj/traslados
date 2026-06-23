@@ -1,9 +1,38 @@
-Útil y sencilla aplicación si se desean calcular distancias a la hora de hacer 
-ordenamiento de destinos en concursos de traslados - cuerpo de funcionarios de CCAA o el Estado.
+# Concurso de Traslados
 
-Accede aquí para ver la app en ejecución a través de streamlit:
+Aplicación web desarrollada en Python y Streamlit para calcular distancias entre localidades y centros educativos, facilitando el análisis y ordenación de destinos en concursos de traslados docentes.
+
+## Aplicación
+
 https://concursotraslados.streamlit.app/
 
-Esta app se desarrolla en python y la forman esencialmente dos ficheros: 
-el main(), traslados.py, y un core.py que aloja las funciones definidas y que son llamadas desde el main().
-Se incluye código de STATCOUNTER y un contador que actualiza visitas en un .txt (solo disponible en local)
+## Funcionalidades
+
+- Cálculo automático de distancias.
+- Comparación de múltiples destinos.
+- Interfaz sencilla orientada a personal docente.
+- Consulta rápida desde navegador.
+
+## Tecnologías
+
+- Python
+- Streamlit
+- Google Maps Distance Matrix API
+
+## Capturas
+
+### Pantalla principal
+
+[landing](images/landing)
+
+### Resultados obtenidos
+
+[resultados](images/resultados)
+
+## Estructura del proyecto
+
+- traslados.py → aplicación principal.
+- core.py → funciones de cálculo
+## Autor
+
+Jorge Olleros
