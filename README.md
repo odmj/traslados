@@ -19,15 +19,9 @@ https://concursotraslados.streamlit.app/
 - Streamlit
 - Google Maps Distance Matrix API
 
-## Capturas
+## Vídeo demostración
 
-### Pantalla principal
-
-![landing](images/landing.JPG)
-
-### Resultados obtenidos
-
-![resultados](images/resultados.JPG)
+[![Ver vídeo](images/tutorial.JPG)](https://youtu.be/oFLQIy7hySQ)
 
 ## Estructura del proyecto
 
