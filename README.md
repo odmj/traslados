@@ -13,12 +13,6 @@ https://concursotraslados.streamlit.app/
 - Interfaz sencilla orientada a personal docente.
 - Consulta rápida desde navegador.
 
-## Tecnologías
-
-- Python
-- Streamlit
-- Google Maps Distance Matrix API
-
 ## Vídeo demostración
 
 [![Ver vídeo](images/tutorial.JPG)](https://youtu.be/oFLQIy7hySQ)
@@ -26,11 +20,17 @@ https://concursotraslados.streamlit.app/
 ## Arquitectura
 
 Usuario
+
 ↓
+
 Aplicación Streamlit
+
 ↓
+
 Google Maps Distance Matrix API
+
 ↓
+
 Resultados de distancia
 
 ## Tecnologías
